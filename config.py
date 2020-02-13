@@ -7,6 +7,6 @@ class Config:
     SECRET_KEY = 'you-will-newer-guess'
 
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-            f'sqlite:///{ basedir / "app.db" }'
+            f'sqlite:///{basedir / "app.db"}'
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
